@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Message</title>
+    <link rel="stylesheet" href="../CSS/messenger.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <link rel="icon" href="img/logoou-removebg-preview (1).png">
+</head>
+<body>
+    <div class="container">
+        <div class="leftSide">
+            <!-- Header -->
+            <div class="header">
+                <div class="userimg animate__animated animate__flipInY">
+                    <a href="../HTML/social.html"><img src="../img/pic.jpg"  class="cover"></a>
+                  
+                </div>
+                <ul class="nav_icons">
+                    <li><i class="fa-solid fa-expand"></i></li>
+                    <li><i class="fa-solid fa-message"></i></li>
+                    <li>
+                        <span id="action_menu_btn"><ion-icon name="ellipsis-vertical"></ion-icon></span>
+                        <div class="action_menu">
+                            <ul>
+                                <li><a href="../HTML/Personal_portfolio.html"><i class="fa-solid fa-image-portrait"></i>Trang cá nhân</a></li>
+                                <li><a href=""><i class="fa-solid fa-trash"></i>Xóa bạn bè</a></li>
+                                <li><a href=""><i class="fas fa-plus"></i>Thêm vào nhóm</a></li>
+                                <li><a href="../HTML/social.html"><i class="fa-solid fa-arrow-rotate-left"></i>Quay lại</a></li>
+                            </ul>
+                        </div>   
+                    </li>   
+                </ul>
+            </div>
+            <!-- Search Chat -->
+            <div class="search_chat">
+                <div>
+                    <i class="fa-solid fa-magnifying-glass"></i><input type="text" placeholder="Tìm kiếm trên Messenger">
+                   
+                </div>                
+            </div>
+            <!-- CHAT LIST -->
+            <div class="chatlist">
+                <div class="block active custom-bg animate__animated animate__fadeInBottomLeft" onclick="loadPost(0)" id="postbg-0">
+                    <div class="imgBox ">
+                        <img src="../img/profile-21.jpg" class="cover" alt="">
+                        <div class="actives"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Hồng Đức</h4>
+                            <p class="time">6:45</p>
+                        </div>
+                        <div class="message_p">
+                            <p>đang đến</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread  animate__animated animate__fadeInBottomRight" onclick="loadPost(1)"id="postbg-1">
+                    <div class="imgBox">
+                        <img src="../img/profile-10.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Mai Ngọc</h4>
+                            <p class="time">19:06</p>
+                        </div>
+                        <div class="message_p text">
+                            <p>Nhớ đến sớm nha</p>
+                            <b class="notification-badge">1</b>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="block unread  animate__animated animate__fadeInBottomLeft" onclick="loadPost(2)"id="postbg-2">
+                    <div class="imgBox">
+                        <img src="../img/profile-14.jpg" class="cover" alt="">
+                        <div class="actives"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Hữu Thành</h4>
+                            <p class="time">Hôm qua</p>
+                        </div>
+                        <div class="message_p text">
+                            <p>Thầy đang bận họp</p>
+                            <b class="notification-badge">2</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomRight" onclick="loadPost(3)"id="postbg-3">
+                    <div class="imgBox">
+                        <img src="../img/profile-17.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Ngọc Mai</h4>
+                            <p class="time">Hôm qua</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Dự án của bạn thế nào rồi!</p>                            
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomLeft" onclick="loadPost(4)"id="postbg-4">
+                    <div class="imgBox">
+                        <img src="../img/profile-18.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Kiên Võ</h4>
+                            <p class="time">12/8/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Cảm ơn!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomRight" onclick="loadPost(5)"id="postbg-5">
+                    <div class="imgBox">
+                        <img src="../img/profile-16.jpg" class="cover" alt="">
+                        <div class="actives"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Thư Nhã</h4>
+                            <p class="time">11/08/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Chúc mừng bà nha</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomLeft" onclick="loadPost(6)"id="postbg-6">
+                    <div class="imgBox">
+                        <img src="../img/profile-22.jpg" class="cover" alt="">
+                        <div class="actives"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Giang Châu</h4>
+                            <p class="time">19/08/2023</p>
+                        </div>
+                        <div class="message_p text">
+                            <p>Bài này khá tốt..</p>
+                            <b class="notification-badge">1</b>
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomRight" onclick="loadPost(7)"id="postbg-7">
+                    <div class="imgBox">
+                        <img src="../img/profile-24.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Ngọc Lan</h4>
+                            <p class="time">10/08/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Okee</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomLeft" onclick="loadPost(8)"id="postbg-8">
+                    <div class="imgBox">
+                        <img src="../img/profile-15.jpg" class="cover" alt="">
+                        <div class="actives"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Minh Toại</h4>
+                            <p class="time">10/08/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Tạm biệt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomRight" onclick="loadPost(9)"id="postbg-9">
+                    <div class="imgBox">
+                        <img src="../img/profile-27.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Thanh Quỳnh</h4>
+                            <p class="time">10/08/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>vậy tầm 4h kém e qua</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomLeft" onclick="loadPost(10)"id="postbg-10">
+                    <div class="imgBox">
+                        <img src="../img/profile-23.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Ninh Trần</h4>
+                            <p class="time">9/08/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>qua anh chơi nè</p> 
+                        </div>
+                    </div>
+                </div>
+                <div class="block  animate__animated animate__fadeInBottomRight" onclick="loadPost(11)"id="postbg-11">
+                    <div class="imgBox">
+                        <img src="../img/profile-26.jpg" class="cover" alt="">
+                        <div class="offline"></div>
+                    </div>
+                    <div class="details">
+                        <div class="listHead">
+                            <h4>Hoàng Yến</h4>
+                            <p class="time">9/08/2023</p>
+                        </div>
+                        <div class="message_p">
+                            <p>Web này hay lắm</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="rightSide"id="postContainer">
+            <div class="header">
+                <div class="imgText">
+                    <div class="userimg">
+                        <img src="../img/profile-21.jpg" alt="" class="cover">
+                     
+                    </div>
+                    <div >
+                        <h4>Hồng Đức</h4>
+                        <div>
+                            <div class="online-indicator"></div>
+                            <p>online</p>    
+                        </div>
+                     
+                    </div>
+                   
+                   
+                </div>
+                
+                <ul class="nav_icons">
+                    <li><ion-icon name="search-outline"></ion-icon></li>
+        
+                    <li>
+                    <span id="action_menu_btn"><i class="fa-solid fa-xmark"></i></span>
+                    </li>
+
+                </ul>
+            </div>
+
+            <!-- CHAT-BOX -->
+            <div class="chatbox"id="message">
+                <div class="message my_msg" id="messageBox">
+                    <p>aloo fenn <br> mai fen có đi học không<br><span>17:00</span></p>
+                </div>
+                <div class="message my_msg">
+                    <p>6h30 đi ha<br><span>17:05</span></p>
+                </div>
+                <div class="message friend_msg">
+                    <p>okeee mai qua chở tui nha<br><span>17:06</span></p>
+                </div>
+                <div class="message my_msg">
+                    <p>okeeee fen<br><span>17:10</span></p>
+                </div>
+                <div class="message friend_msg">
+                    <p>ủa mà ông làm bt lớn thầy thành chưa<br><span>17:20</span></p>
+                </div>
+                <div class="message friend_msg">
+                    <p>tui mới làm được trang giới thiệu ò<br><span>17:21</span></p>
+                </div>
+                <div class="message my_msg">
+                    <p>tui còn chưa làm gì hết luôn gần nộp rùi<br><span>17:25</span></p>
+                </div>
+                <div class="message my_msg">
+                    <p>thế thôi tui học bài đã nha mai tui đón<br><span>17:26</span></p>
+                </div>
+                <div class="message friend_msg">
+                    <p>alo ông qua chưa<br><span>17:10</span></p>
+                </div>
+                <div class="message my_msg">
+                    <p>đang đến<br><span>17:05</span></p>
+                </div>
+            </div>
+            <div class="chat_input">
+                <ion-icon name="happy-outline"></ion-icon>
+                <i class="fa-solid fa-image "></i>
+                <!-- <ion-icon name="happy-outline"></ion-icon> -->
+                <input id="inputBox"type="text" placeholder="Viết tin nhắn...">
+                <i class="fa-solid fa-microphone"></i>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>   
+    <script src="../JS/messenger.js"></script> 
+</body>
+</html>

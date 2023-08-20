@@ -1,0 +1,31 @@
+[ {
+    "id": 1,
+    "image": "..//img/profile-3.jpg",
+    "name": "Đinh Thị Diễm Quỳnh",
+    "comment":"đã bình luận về bài viết của bạn",
+    "time": "1 giờ trước"
+}, {
+    "id": 2,
+    "image": "..//img/profile-4.jpg",
+    "name": "Đinh Thị Dung",
+    "comment":"and <b>  và 283 người khác </b> thích bài viết của bạn",
+    "time": "4 phút trước"
+}, {
+    "id": 3,
+    "image": "..//img/profile-5.jpg",
+    "name": "Phạm Cát Tường Vy",
+    "comment":" bình luận bài viết của bạn",
+    "time": "2 ngày trước"
+}, {
+    "id": 4,
+    "image": "..//img/profile-6.jpg",
+    "name": "Phạm Gia Bảo",
+    "comment":"chấp nhận lời mời kết bạn của bạn",
+    "time":"1 giờ trước"
+}, {
+    "id": 5,
+    "image": "..//img/profile-7.jpg",
+    "name": "Lê Ngọc Thảo",
+    "comment":" bình luận về bài viết của bạn",
+    "time": "1 giờ trước"
+}]

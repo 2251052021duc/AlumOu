@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign up</title>
+    <link rel="stylesheet" href="../CSS/signup.css" />
+    <link rel="icon" href="../img/logoou-removebg-preview (1).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+    <section id="signin" >
+      <div class="container">
+        <div class="signin-container">
+          <div class="signin-form animate__animated animate__rollIn" >
+                    <a href="index.html" class="logo">
+                        <img src="../img/imgintro/ou-uo-design-logos-2-030244d406f11d8cc353f7c5c85da7cbb407d185ec8afa02009f9e4ff9bf788e-removebg-preview.png" alt="Logo" class="logo-img" />
+                        <p>AlumOu</p>
+                     </a>
+                    <div class="form-container">
+                      <h1 class="heading">Đăng Ký</h1>
+                      <p class="paragraph">
+                      Vui lòng điền thông tin để truy cập tài khoản.
+                      </p>
+                      <form class="signin_form">
+                          <div class="input-form-container">
+                              <label for="nameFields">Họ và tên</label>
+                              <div class="input-group"> 
+                                  <input type="text" name="nameFields" id="nameFields" pattern="^(?=.*[A-Za-zÀ-ÖØ-öø-ÿ])[^\d]+$" title="Vui lòng chỉ viết ký tự chữ " required />
+                                  <ion-icon name="close-circle-outline" class="nameFields-clear"></ion-icon>
+                              </div>
+                          </div>
+                          <div class="input-form-container">
+                            <label for="password">Mã số sinh viên</label>
+                            <div class="input-group">
+                                <input type="tel" name="surNameFields" id="surNameFields"  pattern="[0-9]{1,10}" title="vui lòng không viết tối đa 10 ký tự số" required />
+                                <ion-icon name="eye-off-outline" class="surNameFields-toggle"></ion-icon>
+                            </div>
+                            
+                            <div class="input-form-container">
+                                <label for="password">Tên đăng nhập</label>
+                                <div class="input-group">
+                                    <input type="text" name="userFields" id="userFields"pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$" title="Vui lòng không sử dụng cách và phải có ký tự số và chữ" required  />
+                                    <ion-icon name="eye-off-outline" class="password-toggle"></ion-icon>
+                                </div>
+                                <div class="input-form-container">
+                                    <label for="password">Email</label>
+                                    <div class="input-group">
+                                        <input type="email" name="password"   id="emailFields" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" title="Vui lòng điền đúng ký tự gmail phải có @ !!" required/>
+                                        <ion-icon name="eye-off-outline" class="password-toggle"></ion-icon>
+                                    </div>
+                                    <div class="input-form-container">
+                                        <label for="password">Mật khẩu</label>
+                                        <div class="input-group">
+                                            <input type="password" name="password" id="passwordField"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" title="Vui lòng không viết dưới 6 ký tự và phải sử dụng ký tự số" required />
+                                            <i class="fa-regular fa-eye" onclick="changeTypePassword()"></i>
+                                        </div>
+                                        <div class="input-form-container">
+                                              <label for="password">Nhập lại mật khẩu</label>
+                                              <div class="input-group">
+                                                  <input type="password" name="password" id="passwordFields"  pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" title="Vui lòng nhập lại mật khẩu" required  />
+                                                  <i class="fa-solid fa-lock"onclick="cofirmPassword()"></i>
+                                              </div>
+                                        </div>
+                                        <div id="error-message" class="error-message"></div>
+                                        <div class="input-form-container d-flex">
+                                              <div>
+                                                <input type="checkbox" name="remember" id="remember" />
+                                                <label for="remember">Lưu mật khẩu</label>
+                                              </div>
+                                              <a href="#!" class="link">Quên mật khẩu?</a>
+                                        </div>
+                                        <div class="input-form-container">
+                                          <button type="submit" class="btn btn-primary">Đăng ký</button>
+                                        </div>
+                                        <div class="input-form-container">
+                                          <a href="#" class="btn btn-signup"><img src="../img/images_signinout/google.svg" alt="Google"><span>Đăng nhập với Google</span></a>
+                                        </div>
+                                        <div class="input-form-container">
+                                          <p class="paragraph">
+                                          <a href="../HTML/signin.html"><i class="fa-sharp fa-solid fa-rotate-left"></i>Quay lại đăng nhập</a>
+                                          </p>
+                                        </div>  
+                                    </div>
+                                </div>
+                            </div>  
+                       </form>
+                      </div>
+            </div>
+        </div>
+     <div class="signin-image animate__animated animate__zoomInRight">
+            <div class="img-container">
+              <img src="../img/images_signinout/logo sigin.jpg" alt="Main Image" />
+            </div>
+      </div>
+      
+    </section>
+    <script src="../JS/signup.js"></script>
+</body>
+
+</html>

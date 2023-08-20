@@ -1,0 +1,26 @@
+[ {
+    "id": 1,
+    "date": "2019",
+    "cv": "Thực tập viên UI/UX - Công ty B",
+    "feedback":"Trải qua thực tập này, tôi đã học cách tạo giao diện người dùng hấp dẫn và dễ sử dụng. Tôi đã cải thiện kỹ năng làm việc với các công cụ thiết kế và học cách áp dụng nguyên tắc thiết kế UI/UX vào Front-end Development."
+}, {
+    "id": 2,
+    "date": "2020",
+    "cv": "Lập trình viên Front-end Junior - Công ty C",
+    "feedback":"Ở đây, tôi đã bắt đầu tham gia vào các dự án phức tạp hơn, nắm vững các framework như React và Vue.js. Tôi cũng học cách tối ưu hóa mã nguồn và quản lý mã nguồn trong môi trường làm việc nhóm."
+}, {
+    "id": 3,
+    "date": "2021",
+    "cv": "Front-end Developer - Công ty D",
+    "feedback":"Trở thành lập trình viên Front-end chính thức, tôi đã tham gia vào việc xây dựng các ứng dụng web lớn với tích hợp API và quản lý trạng thái ứng dụng. Tôi đã có cơ hội tương tác với back-end team và học cách làm việc chặt chẽ để đảm bảo tính đồng nhất của dự án."
+}, {
+    "id": 4,
+    "date": "2022",
+    "cv": "Leader nhóm Front-end - Công ty E",
+    "feedback":"Tại đây, tôi được giao trọng trách dẫn dắt nhóm phát triển Front-end. Tôi học cách phân chia nhiệm vụ, giám sát tiến độ và đảm bảo chất lượng mã nguồn. Tôi cũng hướng dẫn các thành viên mới trong nhóm để chia sẻ kiến thức và kinh nghiệm."
+}, {
+    "id": 5,
+    "date": "2023",
+    "cv": "Freelance Front-end Developer",
+    "feedback":"Hiện tại, tôi đang làm việc tự do với các dự án Front-end. Điều này giúp tôi mở rộng phạm vi kiến thức và tìm hiểu thêm về nhiều công nghệ và dự án khác nhau."
+}]

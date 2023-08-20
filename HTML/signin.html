@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign in</title>
+    <link rel="stylesheet" href="../CSS/signin.css" />
+    <link rel="icon" href="../img/logoou-removebg-preview (1).png" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  </head>
+
+  <body>
+    <section id="signin">
+      <div class="container">
+        <div class="signin-container">
+          <div class="signin-form animate__animated animate__slideInLeft">
+            <a href="index.html" class="logo">
+              <img src="../img/imgintro/ou-uo-design-logos-2-030244d406f11d8cc353f7c5c85da7cbb407d185ec8afa02009f9e4ff9bf788e-removebg-preview.png" alt="Logo" class="logo-img" />
+              <p>AlumOu</p>
+            </a>
+            <div class="form-container">
+                <h1 class="heading">Đăng Nhập</h1>
+                <p class="paragraph">Vui lòng điền thông tin để truy cập tài khoản.</p>
+                <form class="signin_form">
+                    <div class="input-form-container">
+                      <label for="email">Tên đăng nhập</label>
+                      <div class="input-group">
+                          <input type="text" name="email" id="username" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]+$" title="Vui lòng nhập lại tài khoản" required />
+                          <ion-icon name="close-circle-outline" class="user-clear"></ion-icon>
+                      </div>
+                    </div>
+                    <div class="input-form-container">
+                      <label for="password">Mật khẩu</label>
+                      <div class="input-group">
+                        <input type="password" name="password" id="password" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{6,}$" title="Vui lòng nhập lại mật khẩu" required  />
+                        <i class="fa-regular fa-eye"onclick="changeTypePassword()"></i>
+                      </div>
+                    </div>
+                    <div id="error-message" class="error-message"></div>
+                    <div class="input-form-container d-flex">
+                      <div>
+                          <input type="checkbox" name="remember" id="remember" />
+                          <label for="remember">Lưu mật khẩu</label>
+                      </div>
+                      <a href="#!" class="link">Quên mật khẩu?</a>
+                    </div>
+                    <div class="input-form-container">
+                      <button type="button" class="submit btn btn-primary">Đăng nhập</button>
+                    </div>
+                    <div class="input-form-container">
+                      <a href="#" class="btn btn-signup"><img src="../img/images_signinout/google.svg" alt="Google"><span>Đăng nhập với Google</span></a>
+                    </div>
+                    <div class="input-form-container">
+                      <p class="paragraph">
+                        Bạn không có tài khoản? <a href="./signup.html">Đăng ký</a>
+                      </p>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div class="signin-image animate__animated animate__zoomInLeft">
+            <div class="img-container">
+              <img src="../img/images_signinout/logo sigin.jpg" alt="Main Image" />
+            </div>
+        </div>
+      </div>
+    </section>
+    <script src="../JS/signin.js"></script>
+</body>
+
+</html>
